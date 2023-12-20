@@ -49,7 +49,7 @@ Caso a velocidade de transferência fique inferior ao limite estabelecido, por m
 Tamanho máximo de memória (bytes) usado para cache antes de escrever num pacote. É usado para acelerar escrita de objetos. Fazer o repack de repositórios grandes em máqunas com pouca ram pode impactar no desempenho, principalmente se for usdo SWAP, então aumentar o valor pode ajudar no desempenho, mas também atrapalhar. O padrão é 256Mib, 0 significa infinito.
 
 # pack.threads
-Números de threads a serem gerados quando o processo busca pelas melhores correspondências de delta. Tem o objetivo de reduzir o empacotamente em processadores multicore. 0 signfica que o git auto detectará o melhor valor que considerar necessário, analisando a quantidade de CPU disponível. Também pode tentar forçar um valor diferente.
+Número de threads a serem gerados quando o processo busca pelas melhores correspondências de delta. Tem o objetivo de reduzir o empacotamente em processadores multicore. 0 signfica que o git auto detectará o melhor valor que considerar necessário, analisando a quantidade de CPU disponível. Também pode tentar forçar um valor diferente.
 
 
 # LINKS INTERESSANTES
