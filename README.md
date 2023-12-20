@@ -47,7 +47,7 @@ Valor default é 1. Pode-se tentar variar entre os valores -1, 0 e 9 para ver qu
 Tamanho máximo em bytes do buffer usado pelo smart HTTP quando fizer POST no sistema remoto. Default é 1MiB
 
 # core.fscache
-Com o cache habilitado os dados são lidos em volume a armazenados na memória para certas operações, trazendo um ganho de performance.
+Com o cache habilitado os dados são lidos em volume e armazenados na memória para certas operações, trazendo um ganho de performance.
 
 No manual do git 2.x não há mais referência dessa configuração, mas ao aplicar o git não da erro e aparece como configuração ativa, vale o teste.
 
