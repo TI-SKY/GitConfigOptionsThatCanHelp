@@ -72,7 +72,7 @@ git gc --aggressive
 ```
 
 # LINKS INTERESSANTES
-[GIT GC] (https://git-scm.com/docs/git-gc/2.43.0)
+[GIT GC](https://git-scm.com/docs/git-gc/2.43.0)
 
 [Manaul GIT](https://www.git-scm.com/docs/git-config/2.14.6)
 
