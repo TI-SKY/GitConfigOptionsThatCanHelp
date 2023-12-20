@@ -1,5 +1,5 @@
 # GitConfigOptionsThatCanHelp
-Alguns parâmetros para trabalhar com repositórios grandes. Alguns parâmetros podem trazer melhoras em valores diametralmente diferentes, vale o teste.
+Alguns parâmetros para trabalhar com repositórios grandes, podem trazer melhoras em valores diametralmente diferentes, vale o teste.
 
 As configurações podem ser adicionadas no contexto global `--global` ou na pasta do repositório.
 
