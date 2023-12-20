@@ -1,5 +1,5 @@
 # GitConfigOptionsThatCanHelp
-Alguns parâmetros para trabalhar com repositórios grandes, podem trazer melhoras em valores diametralmente diferentes, vale o teste.
+Alguns opções para trabalhar com repositórios grandes, podem trazer melhoras em valores diametralmente diferentes, vale o teste.
 
 As configurações podem ser adicionadas no contexto global `--global` ou na pasta do repositório.
 
@@ -38,7 +38,9 @@ git config --unset core.compression 9
 # core.compression
 Seta os valores para ambos core.loosecompression e pack.compression.
 Nível de compressão, entre -1 a 9.
+
 0 desabilita, 9 é o maior nível de compressão e -1 usa o padrão zlib.
+
 Valor default é 1. Pode-se tentar variar entre os valores -1, 0 e 9 para ver qual ajuda a melhorar a performance.
 
 # http.postbuffer
@@ -46,10 +48,12 @@ Tamanho máximo em bytes do buffer usado pelo smart HTTP quando fizer POST no si
 
 # core.fscache
 Com o cache habilitado os dados são lidos em volume a armazenados na memória para certas operações, trazendo um ganho de performance.
+
 No manual do git 2.x não há mais referência dessa configuração, mas ao aplicar o git não da erro e aparece como configuração ativa, vale o teste.
 
 # http.lowSpeedLimit e lowSpeedTime
 Define um valor mínimo de transferência e por quanto tempo valores abaixo desse limite serão aceitos.
+
 Caso a velocidade de transferência fique inferior ao limite estabelecido, por mais tempo que o limite estabelecido, o processo é encerrado.
 
 # pack.deltaCacheSize
@@ -63,6 +67,7 @@ Habilita configuração para otimizar repositórios com muitos arquivos no diret
 
 # Garbage Collector
 Faz limpeza de arquivos desnecerrários e otimiza o repositório local.
+
 Geralmente o comando executa em poucos minutos, mas com a opção `--aggressive` o processo rodará pelo tempo q for necessário para realizar a melhor otimização.
 ```bash
 git gc
