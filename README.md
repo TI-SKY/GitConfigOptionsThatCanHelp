@@ -76,9 +76,42 @@ git gc
 git gc --aggressive
 ```
 
+# GIT LOG
+```bash
+git log
+```
+`-n` limita a quantidade de linhas
+```bash
+git log -n 10
+```
+`--ahthor` mostra commits de autores específicos
+```bash
+git log --author="jose.silva"
+```
+`--grep` seleciona commits com a expresão informada
+```bash
+git log --grep="Otimizar"
+```
+`--graph` mostra em formato gráfico e `--pretty=format` permite configurar a saída com varíáveis específicas (verificar todas no manual)
+```bash
+git log --graph --oneline -n20 --pretty=format:"%h - %as - %cn - %s"
+```
+`--after` a partir da data iformada (aceita expressões como `yesterday` e `1 week ago`.
+`--before` antes da data informada
+```bash
+git log --after="2023-12-1"
+```
+```bash
+git log --after="2023-12-1" --before="2023-12-31"
+```
+ 
+
 # LINKS INTERESSANTES
-[GIT GC](https://git-scm.com/docs/git-gc/2.43.0)
 
 [Manaul GIT](https://www.git-scm.com/docs/git-config/2.14.6)
+
+[GIT LOG](https://git-scm.com/docs/git-log)
+
+[GIT GC](https://git-scm.com/docs/git-gc/2.43.0)
 
 [Dicas de performance para GIT](https://www.git-tower.com/blog/git-performance/)
