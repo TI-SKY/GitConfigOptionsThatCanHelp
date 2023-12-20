@@ -57,10 +57,10 @@ Define um valor mínimo de transferência e por quanto tempo valores abaixo dess
 Caso a velocidade de transferência fique inferior ao limite estabelecido, por mais tempo que o limite estabelecido, o processo é encerrado.
 
 # pack.deltaCacheSize
-Tamanho máximo de memória (bytes) usado para cache antes de escrever num pacote. É usado para acelerar escrita de objetos. Fazer o repack de repositórios grandes em máqunas com pouca ram pode impactar no desempenho, principalmente se for usdo SWAP, então aumentar o valor pode ajudar no desempenho, mas também atrapalhar. O padrão é 256Mib, 0 significa infinito.
+Tamanho máximo de memória (bytes) usado para cache antes de escrever num pacote. É usado para acelerar escrita de objetos. Fazer o repack de repositórios grandes em máquinas com pouca ram pode impactar no desempenho, principalmente se for usado SWAP, então aumentar o valor pode ajudar no desempenho, mas também atrapalhar. O padrão é 256Mib, 0 significa infinito.
 
 # pack.threads
-Número de threads a serem gerados quando o processo busca pelas melhores correspondências de delta. Tem o objetivo de reduzir o empacotamente em processadores multicore. 0 signfica que o git auto detectará o melhor valor que considerar necessário, analisando a quantidade de CPU disponível. Pode-se forçar um valor diferente para verificar se haverá melhora.
+Número de threads a serem gerados quando o processo busca pelas melhores correspondências de delta. Tem o objetivo de reduzir o empacotamente em processadores multicore. 0 signfica que o git detectará o melhor valor que considerar necessário, analisando a quantidade de CPU disponível. Pode-se forçar um valor diferente para verificar se haverá melhora.
 
 # feature.manyFiles
 Habilita configuração para otimizar repositórios com muitos arquivos no diretório de trabalho. Comandos como `git status`, `git checkout` e `git add` podem ser mais lentos e essa configuração pode aumentar a performance.
