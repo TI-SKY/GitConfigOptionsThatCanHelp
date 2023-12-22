@@ -19,7 +19,7 @@ git config --list --show-origin
 
 ```bash
 git config core.compression 9
-git config http.postbuffer=524288000
+git config http.postbuffer 524288000
 git config core.fscache true
 git config http.lowSpeedLimit 1
 git config http.lowSpeedTime 999999
