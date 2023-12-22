@@ -23,7 +23,7 @@ git config http.postbuffer 524288000
 git config core.fscache true
 git config http.lowSpeedLimit 1
 git config http.lowSpeedTime 999999
-git config pack.deltaCacheSize 2048M
+git config pack.deltaCacheSize 1024M
 git config pack.threads 0
 git config feature.manyFiles true
 ```
